@@ -6,6 +6,8 @@ Omkar Tamhankar is a Neuroscience student at Indiana University - Bloomington, m
 # Week 1: 8/24/2018 - 8/30/2018
   * Created and posted a formal bio
   * Made a github and piazza account
-# Week 2: 08/31/2018 - 9/6/2018
+# Week 2: 8/31/2018 - 9/6/2018
   * Edited README.md into a README.yml file
   * Started this notebook.md file
+# Week 3: 9/7/2018 - 9/13/2018
+  * Started reading into the assigned technology summaries
