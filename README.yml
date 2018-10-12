@@ -7,3 +7,12 @@ owner:
 technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/virtualbox.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/couchdb.md
+paper:
+  - title: tdb
+  - url: tbd
+  - group: tbd
+project:
+  - title: tbd
+  - url: tbd
+  - group: fa18-423-05, fa18-423-06
+  - code: tbd
