@@ -5,5 +5,5 @@ owner:
   hid: "fa18-423-03"
   community: "I423"
 technologies:
-  -url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/virtualbox.md
-  -url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/couchdb.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/virtualbox.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/couchdb.md
