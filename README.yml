@@ -3,7 +3,7 @@ owner:
   firstname: "Omkar"
   lastname: "Tamhankar"
   hid: "fa18-423-03"
-  community: "I423"
+  community: "i423"
 technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/virtualbox.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/couchdb.md
@@ -14,5 +14,5 @@ paper:
 project:
   - title: tbd
   - url: tbd
-  - group: fa18-423-05, fa18-423-06
+  - group: fa18-423-05 fa18-423-06
   - code: tbd
