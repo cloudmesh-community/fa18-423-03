@@ -29,4 +29,4 @@ Omkar Tamhankar is a Neuroscience student at Indiana University - Bloomington, m
   * Researched into AWS EC2 services for project development
   * Berkeley DB also being considered as a database software for analysis of FDAERS
 # Week 10: 10/26/2018 - 11/1/2018
-  * Finalized all 4 teach summaries
+  * Finalized all 4 tech summaries
