@@ -8,6 +8,8 @@ owner:
 technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/virtualbox.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/couchdb.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/aws-elastic-beanstalk.md
+  - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/berkeley-db.md
 paper:
   - title: tdb
   - url: tbd
