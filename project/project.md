@@ -1,8 +1,6 @@
-##Project Outline
+# Automation on Drug Interactions Profiling
  
 Mongo DB container
- 
-Title: Automation on Drug Interactions Profiling.
  
 Problem:
 The FDA has a public database, FDA's Adverse Event Reporting System (FAERS), that holds information regarding adverse events to drugs. A common issue in the healthcare system is determining whether a drug is safe or not. Currently a pharmaceutical company needs only prove in human clinical trials that a drug is safe when taken in isolation. However, humans are not basic research subjects and are often taking a number of medications. Therefore, we will be using the FDA’s database to cross-reference cases in which a patient who is taking two drugs has the same adverse event as a patient who is on the same two drugs. In this way we can start to chip away at the issue regarding safety of drug interactions.
