@@ -90,7 +90,7 @@ queried data can be used by the user to evaluate the specific results that they
 are looking for. This CSV file can be transferred to a spreadsheet for simple 
 data analysis.
 
-## Amazon Web Services (AWS) EC2 Usage
+### Amazon Web Services (AWS) EC2 Usage
 
 **Overview:**  
 This document explains how to access AWS EC2 and how it was used to run the
@@ -125,7 +125,7 @@ Our .xml files were greater than 1 GB in size. AWS EC2's free tier only offers
 up to 1 GB memory therefore we would receive memory errors when running our
 python files on the server.
 
-## Microsoft Azure Cloud Shell Usage
+### Microsoft Azure Cloud Shell Usage
 
 **Overview:**  
 This document explains how to access Microsoft Azure and how Azure is used to
