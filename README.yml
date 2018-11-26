@@ -10,12 +10,8 @@ technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/couchdb.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/aws-elastic-beanstalk.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/berkeley-db.md
-paper:
-  - title: tdb
-  - url: tbd
-  - group: tbd
 project:
-  - title: tbd
-  - url: tbd
-  - group: fa18-423-05 fa18-423-06
-  - code: tbd
+  - title: Big Data on Health Care - Drug Adverse Effect on Patient
+  - url: https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/report.md
+  - group: fa18-423-03 fa18-423-06 fa18-423-02 fa18-423-05
+  - code: https://github.com/cloudmesh-community/fa18-423-03/tree/master/project-code
