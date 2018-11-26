@@ -5,13 +5,56 @@
 | Indiana University
 | hid: fa18-423-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/report.md)
+| code: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-code/README.md)  
+| Kelvin Liuwie
+| kliuwie@gmail.com
+| Indiana University
+| hid: fa18-423-02
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/report.md)
+| code: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-code/README.md)  
+| Yixing Hu
+| yixihu@gmail.com
+| Indiana University
+| hid: fa18-423-05
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/report.md)
+| code: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-code/README.md)  
+| Omkar Tamhankar
+| otamhank@iu.edu
+| Indiana University
+| hid: fa18-423-03
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-code/README.md)
+
+**:mortar_board: Learning Objectives**
+
+* Creating a program that can parse and query large data sets
+* Exploring various "free" cloud servers to run our program
+* Evaluating which cloud server provides the optimal working efficiency
 
 ## Introduction
 
 For our project, we created a Python program that took raw data from the United
 States Food and Drug Administration's Adverse Event Reporting System (FAERS) and
 filtered out important components for a user to query the information simply.
+The main issue that we noticed was that the important information that Food and
+Drug Administration (FDA) was collecting was in large datasets that incredibly
+difficult to breakdown analyze for the average users of the information. Users
+of this information could be regulators, doctors, or even concerned consumers.
+Therefore, we believe that our program simplifies the analysis of these big data
+sets that are provided by the FDA and makes them fit for spreadsheets, such as
+Excel, for more in-depth review of the drug data.
+
+One of the most important issues in the pharmaceutical industry today is
+determining the quality of a drug on the market [CITE from pharmtech].Currently
+a pharmaceutical company needs only prove in human clinical trials that a drug
+is safe when taken in isolation. However, humans are not basic research subjects
+and are often taking a number of medications. As the state of the healthcare
+system continues to fall victim to political cycles, it is always important to
+make sure that information on the safety and effects of drugs on the market need
+to be readily and easily available for review. We hope that our project
+represents an example of what could be implemented in the marketplace to present
+the information to those who need to be aware of the effects of the drugs that
+they are interacting with.
 
 ## Dataset
 
@@ -40,15 +83,14 @@ reactions from the drug, the name of the drug, and the substances in the drug,
 respectively.
 
 ## Implementation
-
 ![ProgramDesign](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/project_design.PNG)
 
 ### parser.py
 Our parser.py file takes an XML file containing the initial FAERS raw data from
 the website and converts it to a dataframe format to be stored in a CSV file.
 This initial parse separates the three tags that we are looking to store for
-our program (reactionmeddrapt, medicinalproduct, and #activesubstancename). The
-parser.py program flows into the project.py program #where the dataframe format
+our program (reactionmeddrapt, medicinalproduct, and activesubstancename). The
+parser.py program flows into the project.py program where the dataframe format
 allows the data to be easily manipulated.
 
 ### project.py
@@ -68,7 +110,13 @@ data analysis.
 
 ## Conclusion
 
+
+
 ## Bibliography
 
+
+
 ## Work Breakdown
+
+
 
