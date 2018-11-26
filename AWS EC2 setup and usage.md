@@ -15,7 +15,7 @@ Open command prompt, if using Windows, or Terminal, if using Mac. Type in "ssh  
 
 **Uploading files into the instance**
 
-Download Cyberduck 2. Open the application. In the dropdown menu, select "SFTP (SSH File Transfer Protocol)". In the Server field, enter the Public DNS. In the Username field enter "ec2-user" [fa18-423-03-cyberduck-ec2]. In the SSH Private Key field select "Choose" from the dropdown menu and select your .pem key pair file. Click on "Connect". Once connected through Cyberduck, you can simply drag and drop files into the instance.
+Download Cyberduck 2 at https://cyberduck.io/. Open the application. In the dropdown menu, select "SFTP (SSH File Transfer Protocol)". In the Server field, enter the Public DNS. In the Username field enter "ec2-user" [fa18-423-03-cyberduck-ec2]. In the SSH Private Key field select "Choose" from the dropdown menu and select your .pem key pair file. Click on "Connect". Once connected through Cyberduck, you can simply drag and drop files into the instance.
 
 **Disclaimer**
-Our xml files were greater than 1 GB in size. AWS EC2's free tier only offers up to 1 GB memory therefore we would receive memory errors when running our python files on the server.
+Our .xml files were greater than 1 GB in size. AWS EC2's free tier only offers up to 1 GB memory therefore we would receive memory errors when running our python files on the server.
