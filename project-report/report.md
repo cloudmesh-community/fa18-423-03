@@ -36,6 +36,31 @@ respectively.
 
 ## Implementation
 
+![ProgramDesign](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/project_design.PNG)
+
+### parser.py
+Our parser.py file takes an XML file containing the initial FAERS raw data from
+the website and converts it to a dataframe format to be stored in a CSV file.
+This initial parse separates the three tags that we are looking to store for
+our program (reactionmeddrapt, medicinalproduct, and #activesubstancename). The
+parser.py program flows into the project.py program #where the dataframe format
+allows the data to be easily manipulated.
+
+### project.py
+Our project.py file takes an XML file containing the initial FAERS raw data from
+the website and converts the selected data to a CSV file. Using the parsing.py
+function, the function takes our dataframe data and outputs the three tags that
+we used in our project. This program takes the original, large dataset and forms
+a smaller, compact dataset with the data that we deemed important.
+
+### query.py
+Our query.py file takes the compiled CSV file and allows a user to return
+certain data based on inputted values. These inputted values can be certain
+drugs, substances within the drugs, or the reactions of the drugs. This user
+queried data can be used by the user to evaluate the specific results that they
+are looking for. This CSV file can be transferred to a spreadsheet for simple 
+data analysis.
+
 ## Conclusion
 
 ## Bibliography
