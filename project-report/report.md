@@ -1,9 +1,9 @@
-# Automation on Drug Interactions Profiling :hand: fa18-423-06, fa18-423-03, fa18-423-02, fa18-423-05
+# Automation on Drug Interactions Profiling :hand: fa18-423-06 fa18-423-03 fa18-423-02 fa18-423-05
 
 | Yixing Hu, Kelvin Liuwie, Chandler Mick, Omkar Tamhankar
 | yixihu@gmail.com, kliuwie@gmail.com, chmick@iu.edu, otamhank@iu.edu
 | Indiana University
-| hid: fa18-423-02, fa18-423-03, fa18-423-05, fa18-423-06
+| hid: fa18-423-02 fa18-423-03 fa18-423-05 fa18-423-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/report.md)
 | code: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-code/README.md)  
 
@@ -65,9 +65,11 @@ reactions from the drug, the name of the drug, and the substances in the drug,
 respectively.
 
 ## Implementation
+
 ![ProgramDesign](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/project_design.PNG)
 
 ### parser.py
+
 Our parser.py file takes an XML file containing the initial FAERS raw data from
 the website and converts it to a dataframe format to be stored in a CSV file.
 This initial parse separates the three tags that we are looking to store for
@@ -76,6 +78,7 @@ parser.py program flows into the project.py program where the dataframe format
 allows the data to be easily manipulated.
 
 ### project.py
+
 Our project.py file takes an XML file containing the initial FAERS raw data from
 the website and converts the selected data to a CSV file. Using the parsing.py
 function, the function takes our dataframe data and outputs the three tags that
@@ -83,6 +86,7 @@ we used in our project. This program takes the original, large dataset and forms
 a smaller, compact dataset with the data that we deemed important.
 
 ### query.py
+
 Our query.py file takes the compiled CSV file and allows a user to return
 certain data based on inputted values. These inputted values can be certain
 drugs, substances within the drugs, or the reactions of the drugs. This user
@@ -144,7 +148,7 @@ portal which was accessed previously. There, you will open the Cloud Shell for
 the rest of your operations. The very first step in the Cloud Shell is to create
 a deployment user, if you do not already have one. The command should read:
 
-  > "az webapp deployment user set --user-name <username> --password <password>"
+> "az webapp deployment user set --user-name <username> --password <password>"
 
 where <username> and <password> are replaced with the username and password you
 are planning to use. After this command is ran successfully, there should be a
@@ -152,34 +156,34 @@ JSON output with your password shown as null. The username and the password
 should be recorded for future use. After that, you have to create a resource
 group to make it easier to manage, by using the command:
 
-  > "az group create --name myResourceGroup --location "East US""
+> "az group create --name myResourceGroup --location "East US""
 
 For this command, "East US" could be replaced by other regions where Azure is
 available, but for the connection stability, it would be best to use the closest
 region. Then, an Azure App Service plan should be created. The command should
 read:
 
-  > "az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux"
+> "az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux"
 
 When those steps are done, it is the time to create the web app. Still working
 on the Azure Cloud Shell, type the following command lines:
 
-  > "az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "PYTHON|3.7" --deployment-local-git"
+> "az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "PYTHON|3.7" --deployment-local-git"
 
 These command lines should return an output starting with:
 
-  > "Local git is configured with url of 'https://<username>@<app_name>.scm.azurewebsites.net/<app_name>.git'"
+> "Local git is configured with url of 'https://<username>@<app_name>.scm.azurewebsites.net/<app_name>.git'"
 
 This URL of git should be kept as you will need it later for connection.
 
 After those steps, go back to local bash for the following operations. The first
 step is to add an Azure remote to the local Git repository by using the command:
 
-  > "git remote add azure <deploymentLocalGitUrl-from-create-step>"
+> "git remote add azure <deploymentLocalGitUrl-from-create-step>"
 
 And then use:
 
-  > "git push azure master"
+> "git push azure master"
 
 to push to Azure from Git repository. This command should take a bit longer to
 process. Once the processing is done, you can go back to the Azure Portal to
@@ -231,6 +235,7 @@ terms of usability and reliability, we believe that a paid subscription to AWS
 EC2 would be the better of the two.
 
 ## Work Breakdown
+
 * Yixing Hu: Microsoft Azure Server Testing
 * Kelvin Liuwie: Parsing and Project Code Writer
 * Chandler Mick: Report Writer, IBM VirtualBox Testing
