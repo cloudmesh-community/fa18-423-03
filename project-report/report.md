@@ -238,5 +238,5 @@ EC2 would be the better of the two.
 
 * Yixing Hu: Microsoft Azure Server Testing
 * Kelvin Liuwie: Parsing and Project Code Writer
-* Chandler Mick: Report Writer, IBM VirtualBox Testing
+* Chandler Mick: Report Writer, Oracle VirtualBox Testing
 * Omkar Tamhankar: AWS Server Testing
