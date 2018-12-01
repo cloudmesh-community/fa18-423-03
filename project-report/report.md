@@ -112,9 +112,11 @@ box at the top of the screen click on Instance ID link, this will open the
 instance.
 
 **Accessing the instance**  
-Open command prompt, if using Windows, or Terminal, if using Mac. Type in "ssh
--i ~/*key-pair-location*   ec2-user@*IPv4 Public IP*". This will connect you
-into the EC2 instance.
+Open command prompt, if using Windows, or Terminal, if using Mac. Type in: 
+'''
+"ssh -i ~/*key-pair-location*   ec2-user@*IPv4 Public IP*" 
+'''
+This will connect you into the EC2 instance.
 
 **Uploading files into the instance**  
 Download Cyberduck 2. Open the application. In the dropdown menu, select "SFTP
