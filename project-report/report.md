@@ -113,9 +113,11 @@ instance.
 
 **Accessing the instance**  
 Open command prompt, if using Windows, or Terminal, if using Mac. Type in: 
+
 '''
-"ssh -i ~/*key-pair-location*   ec2-user@*IPv4 Public IP*" 
+ssh -i ~/*key-pair-location*   ec2-user@*IPv4 Public IP*
 '''
+
 This will connect you into the EC2 instance.
 
 **Uploading files into the instance**  
