@@ -114,7 +114,7 @@ instance.
 **Accessing the instance**  
 Open command prompt, if using Windows, or Terminal, if using Mac. Type in: 
 
-  '''ssh -i ~/*key-pair-location*   ec2-user@*IPv4 Public IP*'''
+  ```ssh -i ~/*key-pair-location*   ec2-user@*IPv4 Public IP*```
 
 This will connect you into the EC2 instance.
 
@@ -150,7 +150,7 @@ portal which was accessed previously. There, you will open the Cloud Shell for
 the rest of your operations. The very first step in the Cloud Shell is to create
 a deployment user, if you do not already have one. The command should read:
 
-> "az webapp deployment user set --user-name <username> --password <password>"
+  ```az webapp deployment user set --user-name <username> --password <password>```
 
 where <username> and <password> are replaced with the username and password you
 are planning to use. After this command is ran successfully, there should be a
@@ -158,34 +158,34 @@ JSON output with your password shown as null. The username and the password
 should be recorded for future use. After that, you have to create a resource
 group to make it easier to manage, by using the command:
 
-> "az group create --name myResourceGroup --location "East US""
+  ```az group create --name myResourceGroup --location "East US"```
 
 For this command, "East US" could be replaced by other regions where Azure is
 available, but for the connection stability, it would be best to use the closest
 region. Then, an Azure App Service plan should be created. The command should
 read:
 
-> "az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux"
+  ```az appservice plan create --name myAppServicePlan --resource-group myResourceGroup --sku B1 --is-linux```
 
 When those steps are done, it is the time to create the web app. Still working
 on the Azure Cloud Shell, type the following command lines:
 
-> "az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "PYTHON|3.7" --deployment-local-git"
+  ```az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "PYTHON|3.7" --deployment-local-git```
 
 These command lines should return an output starting with:
 
-> "Local git is configured with url of 'https://<username>@<app_name>.scm.azurewebsites.net/<app_name>.git'"
+  ```Local git is configured with url of 'https://<username>@<app_name>.scm.azurewebsites.net/<app_name>.git'```
 
 This URL of git should be kept as you will need it later for connection.
 
 After those steps, go back to local bash for the following operations. The first
 step is to add an Azure remote to the local Git repository by using the command:
 
-> "git remote add azure <deploymentLocalGitUrl-from-create-step>"
+  ```git remote add azure <deploymentLocalGitUrl-from-create-step>```
 
 And then use:
 
-> "git push azure master"
+  ```git push azure master```
 
 to push to Azure from Git repository. This command should take a bit longer to
 process. Once the processing is done, you can go back to the Azure Portal to
