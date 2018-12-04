@@ -66,7 +66,9 @@ respectively.
 
 ## Implementation
 
-![ProgramDesign](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/project_design.PNG)
++@fig:03-project-design} shows
+
+![ProgramDesign](images/project_design.PNG){#fig:03-project-design}
 
 ### parser.py
 
