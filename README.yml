@@ -5,6 +5,7 @@ owner:
   hid: "fa18-423-03"
   community: "i423"
   semester: fa18
+  profile: https://github.com/omkartamhankar
 technologies:
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/virtualbox.md
   - url: https://github.com/cloudmesh/technologies/blob/master/chapters/tech/couchdb.md
