@@ -66,7 +66,7 @@ respectively.
 
 ## Implementation
 
-+@fig:03-project-design} shows 
++@fig:03-project-design shows ...
 
 ![ProgramDesign](images/project_design.PNG){#fig:03-project-design}
 
@@ -116,7 +116,7 @@ instance.
 **Accessing the instance**
 Open command prompt, if using Windows, or Terminal, if using Mac. Type in: 
 
-  ```ssh -i ~/*key-pair-location*   ec2-user@*IPv4 Public IP*```
+```ssh -i ~/*key-pair-location*   ec2-user@*IPv4 Public IP*```
 
 This will connect you into the EC2 instance.
 
@@ -152,9 +152,9 @@ portal which was accessed previously. There, you will open the Cloud Shell for
 the rest of your operations. The very first step in the Cloud Shell is to create
 a deployment user, if you do not already have one. The command should read:
 
-  ```az webapp deployment user set --user-name <username> --password <password>```
+```az webapp deployment user set --user-name <username> --password <password>```
 
-where <username> and <password> are replaced with the username and password you
+where `<username>` and `<password>` are replaced with the username and password you
 are planning to use. After this command is ran successfully, there should be a
 JSON output with your password shown as null. The username and the password
 should be recorded for future use. After that, you have to create a resource
