@@ -30,3 +30,27 @@ Omkar Tamhankar is a Neuroscience student at Indiana University - Bloomington, m
   * Berkeley DB also being considered as a database software for analysis of FDAERS
 # Week 10: 10/26/2018 - 11/1/2018
   * Finalized all 4 tech summaries
+# Week 11: 11/2/2018 - 11/8/2018
+  * Decided on outline for data analysis of final project
+  * FDA offers .xml files but the original file is in a .zip format
+  * Taught myself linux and how to use Terminal on my Mac
+  * Learned ssh, scp, cd, ls, etc. linux functions
+# Week 12: 11/9/2018 - 11/15/2018
+  * Created an AWS EC2 instance under the free tier services
+  * Successfully connected to the instance through terminal and learned to upload files to the instace
+  * Ran into the issue that python 3, pandas, and pip were not yet in the instance
+  * Interviewed at IU for medical school
+ # Week 13: 11/16/2018 - 11/21/2018
+  * Thanksgiving Break: went backpacking till Thursday
+  * Figured out how to download python 3, pandas, and pip into the instace
+  * Successfully ran python files on xml files in the instace
+  * AWS instance does not offer enough RAM to support our project
+ # Week 14: 11/22/2018 - 11/28/2018
+  * Azure too did not have enough RAM to run our project
+  * Virtual Box did not support the cloud server functionality and usability that we requried
+  * Added code to automatically extract .zip files
+ # Week 15: 11/29/2018 - 12/5/2018
+  * Created new algorithm to chunk .xml files to process data one tag at a time, so as not to overload the RAM of the AWS instance
+  * Still did not work
+  * Project works on local machine
+  * Working on chameleon cloud instance to run project code
