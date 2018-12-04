@@ -5,7 +5,7 @@
 | Indiana University
 | hid: fa18-423-02 fa18-423-03 fa18-423-05 fa18-423-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/report.md)
-| code: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-code/README.md)  
+| code: [:cloud:](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-code/README.md)
 
 **:mortar_board: Learning Objectives**
 
@@ -66,7 +66,7 @@ respectively.
 
 ## Implementation
 
-+@fig:03-project-design} shows
++@fig:03-project-design} shows 
 
 ![ProgramDesign](images/project_design.PNG){#fig:03-project-design}
 
@@ -98,11 +98,11 @@ data analysis.
 
 ### Amazon Web Services (AWS) EC2 Usage
 
-**Overview:**  
+**Overview:**
 This document explains how to access AWS EC2 and how it was used to run the
 program in the cloud server [@www-Amazon-Free].
 
-**Setup**  
+**Setup**
 Go to https://aws.amazon.com/. Click on "Sign In to the Console". If you do not
 already have an account set up, create an account. In the "AWS services" search
 bar, search "EC2" and click on the EC2 option. Under "Create Instance" click
@@ -113,14 +113,14 @@ Key Pair", select the check box below, and click "Launch Instance". In the green
 box at the top of the screen click on Instance ID link, this will open the
 instance.
 
-**Accessing the instance**  
+**Accessing the instance**
 Open command prompt, if using Windows, or Terminal, if using Mac. Type in: 
 
   ```ssh -i ~/*key-pair-location*   ec2-user@*IPv4 Public IP*```
 
 This will connect you into the EC2 instance.
 
-**Uploading files into the instance**  
+**Uploading files into the instance**
 Download Cyberduck 2. Open the application. In the dropdown menu, select "SFTP
 (SSH File Transfer Protocol)". In the Server field, enter the Public DNS. In the
 Username field enter "ec2-user" [@fa18-423-03-cyberduck-ec2]. In the SSH Private
@@ -128,18 +128,18 @@ Key field select "Choose" from the dropdown menu and select your .pem key pair
 file. Click on "Connect". Once connected through Cyberduck, you can simply drag
 and drop files into the instance.
 
-**Disclaimer**  
+**Disclaimer** 
 Our .xml files were greater than 1 GB in size. AWS EC2's free tier only offers
 up to 1 GB memory therefore we would receive memory errors when running our
 python files on the server.
 
 ### Microsoft Azure Cloud Shell Usage
 
-**Overview:**  
+**Overview:**
 This document explains how to access Microsoft Azure and how Azure is used to
 run programs in the cloud server [@www-Azure-Free].
 
-**Setup**   
+**Setup** 
 Go to https://portal.azure.com/ to register an Azure account. Once you get an
 account, you can go to Azure Portal to access all the tools you need. The search
 bar at the very top could help you access any resource you need in Azure.
