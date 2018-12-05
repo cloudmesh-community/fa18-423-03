@@ -195,6 +195,82 @@ access the App Services to find the one being created. Click on that service and
 go to the side bar to click on the SSH under Development Tools. Then, you
 can access all the files you have pushed onto the cloud server.
 
+## Chameleon Cloud
+
+**Overview:**
+
+This document explains how to access Chameleon Cloud and how it
+was used to run the program in the cloud server [@www-Chameleon-Cloud].
+
+**Setup**
+
+Go to https://www.chameleoncloud.org and sign up for the free service. However,
+you will need PI Eligibility or have the permission of a PI. A PI must have be a
+researcher or faculty of an academic institution, a part of a federal agency, or
+an independent research facility associated with educational purposes.
+Essentially, the server is meant to provide free access for educational and
+development purposes, as opposed to for-profit purposes.
+
+After obtaining proper access, you are free to create an instance on the server
+to create your virtual machine.
+
+**Creating an Instance**
+
+When creating our instance, the easiest way to get to the instances database was
+to use this website:
+
+```https://openstack.tacc.chameleoncloud.org/dashboard/project/instances/```
+
+Here, you should all the instances created in your project. The webpage should
+resemble the follow photo:
+
+![InstanceDatabase](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/images/Instance_Database.PNG)
+
+From here, you must select the "Launch Instance" button. This should bring up a
+webpage that resembles the picture below. Here, you must enter a name for your
+instance. We used a group member's HID as an example (fa18-423-06). Flavor
+describes the amount of resources that will be allocated to the project.
+Resources such as RAM, disk space, etc. It is important to have at least **16**
+**GB** of RAM to run our project.py program because of the size of the files
+that are being processed. The "Instance Boot Source" must be set to "Boot from
+image." We used Ubuntu 16.04 for our "Image Name" due to the ease of running
+commands through the terminal later.
+
+![InstanceDetails](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/images/Instance_details.PNG)
+
+Next, click on the "Access & Security" tab. Here, you want to create a key pair
+to link the virtual machine to your computer. To do this, you must click on the
+"+" button next to the drop down. You should get a pop up that looks like the
+following:
+
+![KeyPair](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/images/Public_Key.PNG)
+
+You can name the key however you like. To generate and access your public key,
+enter the following commands on Terminal:
+
+```ssh-keygen -t rsa -f <insert your key name>```
+
+This should result in a file being created containing information on your public
+and private keys. To access the public key  enter the following command:
+
+```$ cat ~/.ssh/<public key file name>```
+
+Copy and paste the returned key value into the text box labeled "Public Key" in
+Chameleon Cloud. Now, you are ready to launch the instance. So, click the
+"Launch Instance" button on the bottom of the dialog box. The instance should
+now appear in the database and take a few minutes to spawn and become active.
+Now, you must associate a floating IP address with the instance to access the
+instance. So, click on the "Associate Floating IP" button, pictured below:
+
+![FloatingIp](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/images/floating_ip.PNG)
+
+Here, you may either add a custom IP address, or just use one of the ones given
+in the drop down. We chose the latter. Either way, you must remember this IP
+address to later access the instance through commands in Terminal. Then, leave
+the "Port to be associated" section be. Now, you are ready to associate the IP
+address so click the button to do so. Now, the instance is created and ready to
+run our program!
+
 ## Results
 
 Our program works great on a local machine. If a local machine contains the
@@ -242,5 +318,5 @@ EC2 would be the better of the two.
 
 * Yixing Hu: Microsoft Azure Server Testing
 * Kelvin Liuwie: Parsing and Project Code Writer
-* Chandler Mick: Report Writer, Oracle VirtualBox Testing
-* Omkar Tamhankar: AWS Server Testing
+* Chandler Mick: Report Writer, Chameleon Cloud Testing
+* Omkar Tamhankar: AWS Server Testing, Chameleon Cloud Testing
