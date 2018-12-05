@@ -66,7 +66,9 @@ respectively.
 
 ## Implementation
 
-+@fig:03-project-design shows ...
++@fig:03-project-design represents a visual of what our program is doing. project.py
+is taking the quarterly data from the website and parsing the data. Then, query.py
+is allowing a user to query the data that they are looking for from the database.
 
 ![ProgramDesign](images/project_design.PNG){#fig:03-project-design}
 
