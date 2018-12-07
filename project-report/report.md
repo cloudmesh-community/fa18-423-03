@@ -262,10 +262,9 @@ Chameleon Cloud. Now, you are ready to launch the instance. So, click the
 "Launch Instance" button on the bottom of the dialog box. The instance should
 now appear in the database and take a few minutes to spawn and become active.
 Now, you must associate a floating IP address with the instance to access the
-instance. So, click on the "Associate Floating IP" button, +@fig:07-floating-ip 
-shows:
+instance. So, click on the "Associate Floating IP" button (see +@fig:07-floating-ip).
 
-![FloatingIp](images/floating_ip.PNG){#fig:07-floating-ip}
+![Associating Floating IP](images/floating_ip.PNG){#fig:07-floating-ip}
 
 Here, you may either add a custom IP address, or just use one of the ones given
 in the drop down. We chose the latter. Either way, you must remember this IP
