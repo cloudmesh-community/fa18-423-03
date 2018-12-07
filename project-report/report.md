@@ -12,10 +12,11 @@
 * Creating a program that can parse and query large data sets
 * Exploring various "free" cloud servers to run our program
 * Evaluating which cloud server provides the optimal working efficiency
+* Learning how to use cloud computing
 
 ## Introduction
 
-For our project, we created a Python program that took raw data from the United
+We created a Python program that took raw data from the United
 States Food and Drug Administration's Adverse Event Reporting System (FAERS) and
 filtered out important components for a user to query the information simply.
 The main issue that we noticed was that the important information that Food and
