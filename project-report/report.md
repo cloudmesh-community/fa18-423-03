@@ -226,7 +226,7 @@ to use this website:
 Here, you should all the instances created in your project. The webpage should
 resemble +@fig:04-instance-database:
 
-![InstanceDatabase](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/images/Instance_Database.PNG){#fig:04-instance-database}
+![InstanceDatabase](images/Instance_Database.PNG){#fig:04-instance-database}
 
 From here, you must select the "Launch Instance" button. This should bring up a
 webpage that resembles +@fig:05-instance-details. Here, you must enter a name for your
@@ -238,14 +238,14 @@ that are being processed. The "Instance Boot Source" must be set to "Boot from
 image." We used Ubuntu 16.04 for our "Image Name" due to the ease of running
 commands through the terminal later.
 
-![InstanceDetails](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/images/Instance_details.PNG){#fig:05-instance-details}
+![InstanceDetails](images/Instance_details.PNG){#fig:05-instance-details}
 
 Next, click on the "Access & Security" tab. Here, you want to create a key pair
 to link the virtual machine to your computer. To do this, you must click on the
 "+" button next to the drop down. You should get a pop up that looks like 
 +@fig:06-key-pair:
 
-![KeyPair](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/images/Public_Key.PNG){#fig:06-key-pair}
+![KeyPair](images/Public_Key.PNG){#fig:06-key-pair}
 
 You can name the key however you like. To generate and access your public key,
 enter the following commands on Terminal:
@@ -265,7 +265,7 @@ Now, you must associate a floating IP address with the instance to access the
 instance. So, click on the "Associate Floating IP" button, +@fig:07-floating-ip 
 shows:
 
-![FloatingIp](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-report/images/floating_ip.PNG){#fig:07-floating-ip}
+![FloatingIp](images/floating_ip.PNG){#fig:07-floating-ip}
 
 Here, you may either add a custom IP address, or just use one of the ones given
 in the drop down. We chose the latter. Either way, you must remember this IP
