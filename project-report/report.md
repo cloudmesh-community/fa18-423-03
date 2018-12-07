@@ -197,7 +197,61 @@ access the App Services to find the one being created. Click on that service and
 go to the side bar to click on the SSH under Development Tools. Then, you
 can access all the files you have pushed onto the cloud server.
 
-## Chameleon Cloud
+
+
+## Results
+
+Our program works great on a local machine. If a local machine contains the
+Python programs that we created and the FAERS raw dataset, we are able to easily
+parse and query the proper results that we intended to find. However, the same
+cannot be said for our search for a proper Cloud Server to run this program via
+a virtual machine, as opposed to a local machine. Amazon Web Service's EC2
+Server, Microsoft Azure's Cloud Shell, and IBM's VirtualBox all failed to run
+our program. However, through failure, we learned that two of the three servers'
+issues can be solved through a simple fix: money.
+
+The services that were offered through Amazon Web Service and Microsoft Azure
+were "free trials," where we were limited to a certain number of hours or days
+that we were able to access. However, this also limits the amount of computing
+power we able to access through their programs. AWS only allows 1 GB of memory
+for their free trial version, a mark that was well over the datasets that we
+were working with. Microsoft Azure has a similar pricing structure where you
+actually have different tiers for computing power (RAM) and storage space
+[@www-Azure-Pricing]. Our issue with IBM's VirtualBox started at the source,
+where we were unable to create an initial virtual machine to load our program to
+the server.
+
+The issues with Microsoft Azure and Amazon Web Services Cloud Servers proved to
+be issues that were brought about by having a dataset that was too large for the
+free trial versions of the software. We firmly believe that our program would be
+able to work with ease using our implementation procedures and spending the
+extra money to access a higher quality version of the same services that we
+tested.
+
+## Conclusion
+
+At the beginning of this project, we had a goal to find a way to take the
+massive datasets provided by the FDA and turn them into files that can be easily
+queried by a user for further data analysis. At the same time, we wanted to be
+able to explore the possibility and usefulness of Cloud Servers to run our
+program so it does not have to be limited to being accessed via a local machine.
+While we can firmly say that we have made a program that provides the services
+we set out to create, we can say to a degree of certainty that we have found
+that it can be ran on a cloud server. The two services that we found to be
+favorable were Amazon Web Service's EC2 and Microsoft Azure's Cloud Shell. In
+terms of usability and reliability, we believe that a paid subscription to AWS
+EC2 would be the better of the two.
+
+## Work Breakdown
+
+* Yixing Hu: Microsoft Azure Server Testing
+* Kelvin Liuwie: Parsing and Project Code Writer
+* Chandler Mick: Report Writer, Chameleon Cloud Testing
+* Omkar Tamhankar: AWS Server Testing, Chameleon Cloud Testing
+
+## Appendix
+
+### Chameleon Cloud
 
 **Overview:**
 
@@ -272,53 +326,3 @@ address to later access the instance through commands in Terminal. Then, leave
 the "Port to be associated" section be. Now, you are ready to associate the IP
 address so click the button to do so. Now, the instance is created and ready to
 run our program!
-
-## Results
-
-Our program works great on a local machine. If a local machine contains the
-Python programs that we created and the FAERS raw dataset, we are able to easily
-parse and query the proper results that we intended to find. However, the same
-cannot be said for our search for a proper Cloud Server to run this program via
-a virtual machine, as opposed to a local machine. Amazon Web Service's EC2
-Server, Microsoft Azure's Cloud Shell, and IBM's VirtualBox all failed to run
-our program. However, through failure, we learned that two of the three servers'
-issues can be solved through a simple fix: money.
-
-The services that were offered through Amazon Web Service and Microsoft Azure
-were "free trials," where we were limited to a certain number of hours or days
-that we were able to access. However, this also limits the amount of computing
-power we able to access through their programs. AWS only allows 1 GB of memory
-for their free trial version, a mark that was well over the datasets that we
-were working with. Microsoft Azure has a similar pricing structure where you
-actually have different tiers for computing power (RAM) and storage space
-[@www-Azure-Pricing]. Our issue with IBM's VirtualBox started at the source,
-where we were unable to create an initial virtual machine to load our program to
-the server.
-
-The issues with Microsoft Azure and Amazon Web Services Cloud Servers proved to
-be issues that were brought about by having a dataset that was too large for the
-free trial versions of the software. We firmly believe that our program would be
-able to work with ease using our implementation procedures and spending the
-extra money to access a higher quality version of the same services that we
-tested.
-
-## Conclusion
-
-At the beginning of this project, we had a goal to find a way to take the
-massive datasets provided by the FDA and turn them into files that can be easily
-queried by a user for further data analysis. At the same time, we wanted to be
-able to explore the possibility and usefulness of Cloud Servers to run our
-program so it does not have to be limited to being accessed via a local machine.
-While we can firmly say that we have made a program that provides the services
-we set out to create, we can say to a degree of certainty that we have found
-that it can be ran on a cloud server. The two services that we found to be
-favorable were Amazon Web Service's EC2 and Microsoft Azure's Cloud Shell. In
-terms of usability and reliability, we believe that a paid subscription to AWS
-EC2 would be the better of the two.
-
-## Work Breakdown
-
-* Yixing Hu: Microsoft Azure Server Testing
-* Kelvin Liuwie: Parsing and Project Code Writer
-* Chandler Mick: Report Writer, Chameleon Cloud Testing
-* Omkar Tamhankar: AWS Server Testing, Chameleon Cloud Testing
