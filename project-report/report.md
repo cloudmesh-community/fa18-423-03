@@ -129,6 +129,27 @@ able to work with ease using our implementation procedures and spending the
 extra money to access a higher quality version of the same services that we
 tested.
 
+
+As shown by our results, there are a few similarities and differences to note
+when deciding what platform to use when executing our program. The Terrans Force
+T5 computer by far outperformed all the other machines both in run times for
+compiler.py and query.py. Notably, the Terrans Force T5 outperformed the other
+three machines on every single query execution. Two of the other machines had
+the same amount of RAM as the T5, therefore its superior run times may be on
+account of the more powerful Intel processor that it held. The other three
+machines exhibited similar run times. Interestingly, the two instances we ran on
+Chameleon Cloud had 8 GB of RAM and 16 GB of RAM, respectively, but there was no
+significant difference in run time between them.
+
+Although, these results are difficult to extrapolate to all computer forms,
+based on our results, our program runs best on local machines that have both
+high RAM and powerful processors. However, users may not want to take up their
+own hard disk space with these large data files, therefore we recommend running
+on a virtual machine with minimum 8 GB of RAM. Services such as Azure and AWS
+offer a wide range of virtual machine options so it is up to the user how much
+they are willing to pay for speed and processing power.
+
+
 ## Conclusion
 
 At the beginning of this project, we had a goal to find a way to take the
