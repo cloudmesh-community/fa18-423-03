@@ -62,7 +62,7 @@ something as serious as death. Every tag includes information about the patient,
 the side effect, the drug, treatment duration, etc. For this project, we decided
 the most important tags that would want to be accessed would be the
 reactionmeddrapt, medicinalproduct, and activesubstancename. These relate to the
-reactions from the drug, the name of the drug, and the substances in the drug,
+reactions from the drug(s), the name of the drug, and the substances in the drug,
 respectively.
 
 ## Implementation
