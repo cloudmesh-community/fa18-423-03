@@ -19,7 +19,7 @@
 We created a Python program that took raw data from the United
 States Food and Drug Administration's Adverse Event Reporting System (FAERS) and
 filtered out important components for a user to query the information simply.
-The main issue that we noticed was that the important information that Food and
+The main issue that we noticed was that the important information that the Food and
 Drug Administration (FDA) was collecting was in large datasets that incredibly
 difficult to breakdown analyze for the average users of the information. Users
 of this information could be regulators, doctors, or even concerned consumers.
