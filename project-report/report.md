@@ -310,7 +310,7 @@ Repatha produced by Amgen is a PCSK9 inhibitor designed to designed to attack
 and inactivate PSCK9 proteins and result in lowered LDL cholesterol
 [@fa18-423-03-repatha]. This drug was approved by the FDA in January 2015,
 therefore it is a relatively new drug for treating hyperlipidemia. According to
-PDR.net, Repatha has no interactions with other drugs [@fa18-423-03-repatha].
+PDR.net, Repatha has no interactions with other drugs [@fa18-423-03-repatha-interactions].
 When run our program, however, we have found that Repatha has an interaction
 with Pravastatin another cholesterol lowering medication. However, we did not
 find any adverse event reports tying Repatha and Lipitor (Atorvastatin) a
