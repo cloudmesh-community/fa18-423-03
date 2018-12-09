@@ -54,3 +54,7 @@ Omkar Tamhankar is a Neuroscience student at Indiana University - Bloomington, m
   * Still did not work
   * Project works on local machine
   * Working on chameleon cloud instance to run project code
+ # Week 16: 12/6/2018 - 12/9/2018
+  * Finished all data production, formatting, and interpretation of data analysis
+  * Researched relevant clinical cases and produced example using program code
+  * Finished documentation of project
