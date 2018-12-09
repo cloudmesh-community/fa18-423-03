@@ -67,38 +67,143 @@ respectively.
 
 ## Implementation
 
-+@fig:03-project-design represents a visual of what our program is doing. project.py
-is taking the quarterly data from the website and parsing the data. Then, query.py
-is allowing a user to query the data that they are looking for from the database.
+### Code Structure
 
-![This is the workflow of our program](images/design.PNG){#fig:03-project-design}
++@fig:03-design depicts the workflow of our program as a whole. compile.py is
+taking the quarterly data from the website and parsing the data and compiling
+the data into a .csv file. Then, query.py is allowing a user to query the data
+that they are looking for from the database.
 
-### parser.py
+![This image depicts the workflow of our program](images/design.PNG){#fig:03-design}
+
+#### Code README file
+
+To access our program's README file and gain an understanding of the look and
+process of our code, go to [this
+website](https://github.com/cloudmesh-community/fa18-423-03/blob/master/project-code/README.md).
+
+#### parser.py
 
 Our parser.py file takes an XML file containing the initial FAERS raw data from
 the website and converts it to a dataframe format to be stored in a CSV file.
 This initial parse separates the three tags that we are looking to store for
 our program (reactionmeddrapt, medicinalproduct, and activesubstancename). The
-parser.py program flows into the project.py program where the dataframe format
+parser.py program flows into the compile.py program where the dataframe format
 allows the data to be easily manipulated.
 
-### project.py
+#### compile.py
 
-Our project.py file takes an XML file containing the initial FAERS raw data from
+Our compile.py file takes an XML file containing the initial FAERS raw data from
 the website and converts the selected data to a CSV file. Using the parsing.py
 function, the function takes our dataframe data and outputs the three tags that
 we used in our project. This program takes the original, large dataset and forms
 a smaller, compact dataset with the data that we deemed important.
 
-### query.py
+#### query.py
 
 Our query.py file takes the compiled CSV file and allows a user to return
 certain data based on inputted values. These inputted values can be certain
 drugs, substances within the drugs, or the reactions of the drugs. This user
 queried data can be used by the user to evaluate the specific results that they
-are looking for. This CSV file can be transferred to a spreadsheet for simple 
+are looking for. This CSV file can be transferred to a spreadsheet for simple
 data analysis.
 
+The main purpose behind this code is to allow healthcare practitioners to be
+able to find patients who have had reported adverse side effects to drug or
+substance combinations similar to their patient. For example, if a patient were
+to have a history of intense fatigue and headaches while taking Crestor and
+Repatha, a healthcare practitioner could use our query to search for a drug
+combination that does not have the reported adverse side effects of headaches
+and fatigue yet combats the same target health issue.
+
+### Technologies Used
+
+#### Python Packages
+
+* **pip:** package manager that is used to download pandas. Ensure that the most
+recent version is downloaded.
+  - ```pip install --upgrade pip```
+
+* **pandas:** Python package that allows our program to put our data in
+datatable format.
+  - *In AWS:* ```pip3 install pandas --user```
+  - *In Chameleon Cloud:* ```pip3 install pandas --user```
+  _ *In Azure:* ```pip3 install pandas```
+
+#### Amazon Web Services (AWS) EC2
+
+AWS EC2 [@www-Amazon-Free] is a cloud service that acted as a virtual machine
+that stored, ran, and transferred our code and its results. A free trial version
+with limited performance features was used to test our code.
+
+#### Chameleon Cloud
+
+Chameleon Cloud [@www-Chameleon-Cloud] is a cloud service that acted as a
+virtual machine that stored, ran, and transferred our code and its results. This
+cloud compute was provided to us for free for academic purposes by the National
+Science Institute.
+
+#### Microsoft Azure
+
+Microsoft Azure [@www-Azure-Free] is a cloud service that acted as a virtual
+machine that stored, ran, and transferred our code and its results. A free trial
+version with limited performance features used to test our code.
+
+#### Cyberduck
+
+Cyberduck [@fa18-423-03-cyberduck-ec2] is a FTP and SFTP service that was used
+to transfer our program files from our local machine to the virtual machines.
+Cyberduck is free with any platform.
+
+#### Ubuntu 18.04
+
+Ubuntu 18.04 [@www-Ubuntu] is the operating system that we ran all of our
+program code on through the virtual machine and a local machine.
+
+#### Mac Operating System (OS)
+
+Mac OS [@www-Mac-OS] is the operating system that we ran on our local machines
+to test the program code.
+
+### Prerequisites
+
+To run our program, the following would be needed to use the technologies
+mentioned above.
+
+#### AWS Account
+
+An AWS account is necessary to run their EC2 server. To get an account, go to
+[this website](https://aws.amazon.com/) and follow the instructions. The free
+trial version was used for our tests.
+
+#### Chameleon Cloud Account
+
+A Chameleon Cloud account is necessary to access their server. To get an
+account, go to [this website](https://www.chameleoncloud.org) and sign up for
+the free service. However, you will need PI Eligibility or have the permission
+of a PI. A PI must be a researcher or faculty of an academic institution, part
+of a federal agency, or related to an independent research facility associated
+with educational purposes. Essentially, the server is meant to provide free
+access for educational and development purposes, as opposed to for-profit
+purposes.
+
+#### Microsoft Azure Account
+
+An Azure account is necessary to access their cloud server. To get an account,
+go to [this website](http://portal.azure.com/). Initial access is free, but
+Microsoft incorporates a "pay as you go" structure to provide users with greater
+needs of computing power access if necessary.
+
+### Architecture
+
+Overall, the architecture of our tests is depicted in +@fig:04-architecture.
+Data files and program code were loaded to the virtual machines through
+Cyberduck. Then, AWS EC2, Chameleon Cloud, and Microsoft Azure were tested to
+find out which service offered the best environment to run our program code
+efficiently. Then, this data was accessed by the user through a local machine
+using console commands.
+
+![This image depicts the architecture of our tests](images/architecture.PNG){#fig:04-architecture}
 
 ## Results
 
