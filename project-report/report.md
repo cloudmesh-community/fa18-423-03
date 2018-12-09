@@ -128,7 +128,7 @@ recent version is downloaded.
 datatable format.
   - *In AWS:* ```pip3 install pandas --user```
   - *In Chameleon Cloud:* ```pip3 install pandas --user```
-  _ *In Azure:* ```pip3 install pandas```
+  - *In Azure:* ```pip3 install pandas```
 
 #### Amazon Web Services (AWS) EC2
 
@@ -271,9 +271,9 @@ EC2 would be the better of the two.
 
 ## Work Breakdown
 
-* Yixing Hu: Microsoft Azure Server Testing
-* Kelvin Liuwie: Parsing and Project Code Writer
-* Chandler Mick: Report Writer, Chameleon Cloud Testing
+* Yixing Hu: Microsoft Azure Server Testing, Query Code Editor
+* Kelvin Liuwie: Parsing, Compile, and Query Code Writer
+* Chandler Mick: Report Writer, Chameleon Cloud Testing, Query Code Editor
 * Omkar Tamhankar: AWS Server Testing, Chameleon Cloud Testing
 
 ## Clincally Relevant Findings 
