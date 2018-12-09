@@ -214,10 +214,51 @@ using console commands.
 
 ## Results
 
+### Data Visualization
+
+#### Machine Information and Power
+
++@fig:03-machine-info summarizes the power of the machines that we tested.
+
+![Machine information data table](images/machine_info.PNG){#fig:03-machine-info}
+
+#### FAERS Data files
+
++@fig:04-data-files reveals the sizes of the XML files taken from the FAERS
+website.
+
+![FAERS Data Files](images/data_files.PNG){#fig:04-data-files}
+
+#### compile.py Run Times
+
++@fig:05-compile-results lays out the performance of each of the tested machines
+compared by their processing speed on the compile.py program.
+
+![Compile Data Set](images/compile_results.PNG){#fig:05-compile-results}
+
++@fig:06-compile-chart graphically analyzes the data presented above, showing
+the Terrans Force local machine as a clear winner.
+
+![Compile Time Chart](images/compile_time.PNG){#fig:06-compile-chart}
+
+#### query.py Run Times
+
++@fig:07-query-data lays out the performance of each of the tested machines
+compared by their processing speed on the query.py program.
+
+![Query Data Set](images/query_data.PNG){#fig:07-query-data}
+
++@fig:08-query-chart graphically analyzes the data presented above, showing
+the Terrans Force local machine as a clear winner.
+
+![Query Time Chart](images/query_time.PNG){#fig:08-query-chart}
+
+### Discussion
+
 As shown by our results, there are a few similarities and differences to note
 when deciding what platform to use when executing our program. The Terrans Force
 T5 computer by far outperformed all the other machines both in run times for
-compiler.py and query.py. Notably, the Terrans Force T5 outperformed the other
+compile.py and query.py. Notably, the Terrans Force T5 outperformed the other
 three machines on every single query execution. Two of the other machines had
 the same amount of RAM as the T5, therefore its superior run times may be on
 account of the more powerful Intel processor that it held. The other three
@@ -229,7 +270,21 @@ Although, these results are difficult to extrapolate to all computer forms,
 based on our results, our program runs best on local machines that have both
 high RAM and powerful processors. However, users may not want to take up their
 own hard disk space with these large data files, therefore we recommend running
-on a virtual machine with minimum 8 GB of RAM. 
+on a virtual machine with minimum 8 GB of RAM.
+
+#### AWS Error
+
++@fig:09-AWS-error depicts the error message that comes from trying to initiate
+the compile.py program in AWS EC2.
+
+![AWS Error](images/AWS_error.PNG){#fig:09-AWS-error}
+
+#### Azure Error
+
++@fig:10-Azure-error depicts the error message that comes from trying to initiate
+the compile.py program in Microsoft Azure.
+
+![Azure Error](images/azure_error.png){#fig:10-Azure-error}
 
 The services that were offered through Amazon Web Service and Microsoft Azure
 were "free trials," where we were limited to a certain number of hours or days
@@ -245,11 +300,11 @@ be issues that were brought about by having a dataset that was too large for the
 free trial versions of the software. We firmly believe that our program would be
 able to work with ease using our implementation procedures and spending the
 extra money to access a higher quality version of the same services that we
-tested.Services such as Azure and AWS offer a wide range of virtual machine 
-options so it is up to the user how much they are willing to pay for speed and 
+tested.Services such as Azure and AWS offer a wide range of virtual machine
+options so it is up to the user how much they are willing to pay for speed and
 processing power.
 
-## Clincally Relevant Findings 
+### Clincally Relevant Findings
 
 Repatha produced by Amgen is a PCSK9 inhibitor designed to designed to attack
 and inactivate PSCK9 proteins and result in lowered LDL cholesterol
@@ -259,23 +314,25 @@ PDR.net, Repatha has no interactions with other drugs [@fa18-423-03-repatha].
 When run our program, however, we have found that Repatha has an interaction
 with Pravastatin another cholesterol lowering medication. However, we did not
 find any adverse event reports tying Repatha and Lipitor (Atorvastatin) a
-different cholesterol lowering medication. +@fig:0-side-effects
-shows our results tying the adverse events of patients taking both Repatha and
-Pravastatin, but no other drugs. 
+different cholesterol lowering medication. +@fig:11-results depicts the final
+CSV file that a user would have access to after running our program to
+completion. +@fig:12-side-effects shows our results tying the adverse events of
+patients taking both Repatha and Pravastatin, but no other drugs.
 
-![This image depicts the side effects of Repatha and Atorvastatin](images/side_effects.PNG){#fig:0-side-effects}
+![Resulting CSV file from running program](images/query_results.PNG){#fig:11-results}
 
-PSCK9 inhibitors are generally prescribed in
-combination with a statin drug so healthcare providers should be aware of the
-possible interactions between these two classes of drugs [@fa18-423-03-repatha].
-Therefore, the novelty produced by our program is that healthcare professionals
-are able to take the most up-to-date adverse events published by the FDA and
-check for drug interactions of recently released drugs. This database in
-combination with our program gives healthcare professionals the power to skip
-the latency period for enough adverse events to occur for drug companies to
-relay that information to the healthcare providers. Ultimately, this can save
-patients from facing unnecessary interactions, whether they be major or minor
-side effects.
+![This image depicts the side effects of Repatha and Atorvastatin](images/side_effects.PNG){#fig:12-side-effects}
+
+PSCK9 inhibitors are generally prescribed in combination with a statin drug so
+healthcare providers should be aware of the possible interactions between these
+two classes of drugs [@fa18-423-03-repatha]. Therefore, the novelty produced by
+our program is that healthcare professionals are able to take the most
+up-to-date adverse events published by the FDA and check for drug interactions
+of recently released drugs. This database in combination with our program gives
+healthcare professionals the power to skip the latency period for enough adverse
+events to occur for drug companies to relay that information to the healthcare
+providers. Ultimately, this can save patients from facing unnecessary
+interactions, whether they be major or minor side effects.
 
 ## Conclusion
 
@@ -292,12 +349,23 @@ favorable were Amazon Web Service's EC2 and Microsoft Azure's Cloud Shell. In
 terms of usability and reliability, we believe that a paid subscription to AWS
 EC2 would be the better of the two.
 
+## Acknowledgments
+
+Thank you to Dr. Gregor von Laszewski for his continued help and support through 
+our development and understanding of Big Data and cloud servers. His guidance
+proved essential to the culmination of our configuration and testing.
+
+Results presented in this paper were obtained using Chameleon testbed supported
+by the National Science Foundation.
+
 ## Work Breakdown
 
 * Yixing Hu: Microsoft Azure Server Testing, Query Code Editor
 * Kelvin Liuwie: Parsing, Compile, and Query Code Writer
 * Chandler Mick: Report Writer, Chameleon Cloud Testing, Query Code Editor
 * Omkar Tamhankar: AWS Server Testing, Chameleon Cloud Testing, Medical Advisor
+
+
 
 ## Appendix
 
@@ -328,12 +396,12 @@ to use this website:
 ```https://openstack.tacc.chameleoncloud.org/dashboard/project/instances/```
 
 Here, you should all the instances created in your project. The webpage should
-resemble +@fig:0-instance-database:
+resemble +@fig:13-instance-database:
 
-![InstanceDatabase](images/Instance_Database.PNG){#fig:0-instance-database}
+![InstanceDatabase](images/Instance_Database.PNG){#fig:13-instance-database}
 
 From here, you must select the "Launch Instance" button. This should bring up a
-webpage that resembles +@fig:0-instance-details. Here, you must enter a name for your
+webpage that resembles +@fig:14-instance-details. Here, you must enter a name for your
 instance. We used a group member's HID as an example (fa18-423-06). Flavor
 describes the amount of resources that will be allocated to the project.
 Resources such as RAM, disk space, etc. It is important to have at least **16**
@@ -342,14 +410,14 @@ that are being processed. The "Instance Boot Source" must be set to "Boot from
 image." We used Ubuntu 16.04 for our "Image Name" due to the ease of running
 commands through the terminal later.
 
-![InstanceDetails](images/Instance_details.PNG){#fig:0-instance-details}
+![InstanceDetails](images/Instance_details.PNG){#fig:14-instance-details}
 
 Next, click on the "Access & Security" tab. Here, you want to create a key pair
 to link the virtual machine to your computer. To do this, you must click on the
 "+" button next to the drop down. You should get a pop up that looks like 
-+@fig:0-key-pair:
++@fig:15-key-pair:
 
-![KeyPair](images/Public_Key.PNG){#fig:0-key-pair}
+![KeyPair](images/Public_Key.PNG){#fig:15-key-pair}
 
 You can name the key however you like. To generate and access your public key,
 enter the following commands on Terminal:
@@ -366,9 +434,9 @@ Chameleon Cloud. Now, you are ready to launch the instance. So, click the
 "Launch Instance" button on the bottom of the dialog box. The instance should
 now appear in the database and take a few minutes to spawn and become active.
 Now, you must associate a floating IP address with the instance to access the
-instance. So, click on the "Associate Floating IP" button (see +@fig:0-floating-ip).
+instance. So, click on the "Associate Floating IP" button (see +@fig:16-floating-ip).
 
-![Associating Floating IP](images/floating_ip.PNG){#fig:0-floating-ip}
+![Associating Floating IP](images/floating_ip.PNG){#fig:16-floating-ip}
 
 Here, you may either add a custom IP address, or just use one of the ones given
 in the drop down. We chose the latter. Either way, you must remember this IP
