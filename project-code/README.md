@@ -3,8 +3,7 @@
 
 **Overview:**
 
-The project ultimate goal is to improve the health care system that we currently have by further looking into drugs that patients used. Patients are prescribed with multiple drugs for the purpose of curing their illness. On the hope of doing so, some patients may recover fully, and some may not be so lucky.  Taking different drugs at the same time might cause them to interact with one another and thus resulting in unforeseeable adverse effect on the patients themselves. As such, patients may become more ill or sometimes can lead to death. The currently available information is being stored in a big file data which only partial of the information is useful to run query on. Therefore, the purpose of this project is to assist in terms of streamlining the currently available information into more digestible data that can be used by users to do further research on the drugs and the patient reactions.
-
+Our goal in developing this code and surrounding architecture has several levels. There are three python files that execute this functionality: compile.py, parser.py, and query.py. The user need only call compile.py, which will automatically call parser.py, and then the user can call query.py which will prompt them to input their search. The data that compile.py runs on is taken from the FAERS website in the form of an .xml file. The output is in the form a .csv file that any user can open with a program like Microsoft Excel. On a fundamental level, we developed a program that has lasting use for healthcare professionals to take the information provided by the FDA, extract the relevant data, and query based on the reactions, drugs, or substances based on each individual patients' needs.
 
 **Requirement:**
 
