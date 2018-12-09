@@ -207,34 +207,6 @@ using console commands.
 
 ## Results
 
-Our program works great on a local machine. If a local machine contains the
-Python programs that we created and the FAERS raw dataset, we are able to easily
-parse and query the proper results that we intended to find. However, the same
-cannot be said for our search for a proper Cloud Server to run this program via
-a virtual machine, as opposed to a local machine. Amazon Web Service's EC2
-Server, Microsoft Azure's Cloud Shell, and IBM's VirtualBox all failed to run
-our program. However, through failure, we learned that two of the three servers'
-issues can be solved through a simple fix: money.
-
-The services that were offered through Amazon Web Service and Microsoft Azure
-were "free trials," where we were limited to a certain number of hours or days
-that we were able to access. However, this also limits the amount of computing
-power we able to access through their programs. AWS only allows 1 GB of memory
-for their free trial version, a mark that was well over the datasets that we
-were working with. Microsoft Azure has a similar pricing structure where you
-actually have different tiers for computing power (RAM) and storage space
-[@www-Azure-Pricing]. Our issue with IBM's VirtualBox started at the source,
-where we were unable to create an initial virtual machine to load our program to
-the server.
-
-The issues with Microsoft Azure and Amazon Web Services Cloud Servers proved to
-be issues that were brought about by having a dataset that was too large for the
-free trial versions of the software. We firmly believe that our program would be
-able to work with ease using our implementation procedures and spending the
-extra money to access a higher quality version of the same services that we
-tested.
-
-
 As shown by our results, there are a few similarities and differences to note
 when deciding what platform to use when executing our program. The Terrans Force
 T5 computer by far outperformed all the other machines both in run times for
@@ -250,10 +222,25 @@ Although, these results are difficult to extrapolate to all computer forms,
 based on our results, our program runs best on local machines that have both
 high RAM and powerful processors. However, users may not want to take up their
 own hard disk space with these large data files, therefore we recommend running
-on a virtual machine with minimum 8 GB of RAM. Services such as Azure and AWS
-offer a wide range of virtual machine options so it is up to the user how much
-they are willing to pay for speed and processing power.
+on a virtual machine with minimum 8 GB of RAM. 
 
+The services that were offered through Amazon Web Service and Microsoft Azure
+were "free trials," where we were limited to a certain number of hours or days
+that we were able to access. However, this also limits the amount of computing
+power we able to access through their programs. AWS only allows 1 GB of memory
+for their free trial version, a mark that was well over the datasets that we
+were working with. Microsoft Azure has a similar pricing structure where you
+actually have different tiers for computing power (RAM) and storage space
+[@www-Azure-Pricing].
+
+The issues with Microsoft Azure and Amazon Web Services Cloud Servers proved to
+be issues that were brought about by having a dataset that was too large for the
+free trial versions of the software. We firmly believe that our program would be
+able to work with ease using our implementation procedures and spending the
+extra money to access a higher quality version of the same services that we
+tested.Services such as Azure and AWS offer a wide range of virtual machine 
+options so it is up to the user how much they are willing to pay for speed and 
+processing power.
 
 ## Conclusion
 
@@ -264,7 +251,8 @@ able to explore the possibility and usefulness of Cloud Servers to run our
 program so it does not have to be limited to being accessed via a local machine.
 While we can firmly say that we have made a program that provides the services
 we set out to create, we can say to a degree of certainty that we have found
-that it can be ran on a cloud server. The two services that we found to be
+that it can be ran on a cloud server. The service that we used successfully was
+Chameleon Cloud however for the average user, the two services that we found to be
 favorable were Amazon Web Service's EC2 and Microsoft Azure's Cloud Shell. In
 terms of usability and reliability, we believe that a paid subscription to AWS
 EC2 would be the better of the two.
