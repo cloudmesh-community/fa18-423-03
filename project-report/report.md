@@ -150,6 +150,9 @@ EC2 would be the better of the two.
 * Chandler Mick: Report Writer, Chameleon Cloud Testing
 * Omkar Tamhankar: AWS Server Testing, Chameleon Cloud Testing
 
+**Clincally Relevant Findings**  
+Repatha produced by Amgen is a PCSK9 inhibitor designed to designed to attack and inactivate PSCK9 proteins and result in lowered LDL cholesterol [@fa18-423-03-repatha]. This drug was approved by the FDA in January 2015, therefore it is a relatively new drug for treating hyperlipidemia. According to PDR.net, Repatha has no interactions with other drugs [@fa18-423-03-repatha]. When run our program, however, we have found that Repatha has an interaction with Pravastatin another cholesterol lowering medication. However, we did not find any adverse event reports tying Repatha and Lipitor (Atorvastatin) a different cholesterol lowering medication. Figure [enter figure number here] shows our results tying the adverse events of patients taking both Repatha and Pravastatin but no other drugs. PSCK9 inhibitors are generally prescribed in combination with a statin drug so healthcare providers should be aware of the possible interactions between these two classes of drugs [@fa18-423-03-repatha]. Therefore, the novelty produced by our program is that healthcare professionals are able to take the most up-to-date adverse events published by the FDA and check for drug interactions of recently released drugs. This database in combination with our program gives healthcare professionals the power to skip the latency period for enough adverse events to occur for drug companies to relay that information to the healthcare providers. Ultimately, this can save patients from facing unnecessary interactions, whether they be major or minor side effects.
+
 ## Appendix
 
 ### Chameleon Cloud
@@ -327,6 +330,5 @@ access the App Services to find the one being created. Click on that service and
 go to the side bar to click on the SSH under Development Tools. Then, you
 can access all the files you have pushed onto the cloud server.
 
-**Clincally Relevant Findings**  
-Lutathera produced by Advanced Accelerator Applications is a drug designed to treat gastro-entero pancreatic neuroendocrine tumors (GEP-NETs) [@fa18-423-03-lutera-info]. This drug was approved by the FDA in January 2018, therefore it is a relatively new drug for treating cancer. Chronic disease rates are ever increasing in the US and because rates of chronic disease correlate with age, generally older patients who get cancer are at risk of atherosclerotic disease as well [@fa18-423-03-chronic-disease-trends]. According to Drugs.com, Lutathera has interactions with a total of 190 different drugs. When run through our program, we have found that Lutathera has an interaction with Crestor (Rosuvastatin), a cholesterol lowering medication. However, we did not find any adverse event reports tying Lutathera and Lipitor (Atorvastatin) a different cholesterol lowering medication. Therefore, the novelty produced by our program is that healthcare professionals are able to take the most up-to-date adverse events published by the FDA and check for drug interactions of recently released drugs. This database in combination with our program gives healthcare professionals the power to skip the latency period for enough adverse events to occur for drug companies to relay that information to the healthcare providers. Ultimately, this can save patients from facing unnecessary interactions, whether they be major or minor side effects.
+
 
