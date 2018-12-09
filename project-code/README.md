@@ -8,7 +8,10 @@ The project ultimate goal is to improve the health care system that we currently
 
 **Requirement:**
 
-The program can be run on different computer operating systems such as Linux, Microsoft, and Mac with basic requirement fulfilled. Different server services can be accessed through [Amazon Web Services](https://aws.amazon.com/) [Microsoft Azure](https://portal.azure.com/) [Chameleon Cloud](https://www.chameleoncloud.org)
+The program can be run on different computer operating systems such as Linux, Microsoft, and Mac with basic requirement fulfilled. Different server services can be accessed through 
+* [Amazon Web Services](https://aws.amazon.com/) 
+* [Microsoft Azure](https://portal.azure.com/) 
+* [Chameleon Cloud](https://www.chameleoncloud.org)
 
 Basic requirement:
   * Python3
