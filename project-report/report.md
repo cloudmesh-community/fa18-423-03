@@ -71,7 +71,7 @@ respectively.
 is taking the quarterly data from the website and parsing the data. Then, query.py
 is allowing a user to query the data that they are looking for from the database.
 
-![ProgramDesign](images/project_design.PNG){#fig:03-project-design}
+![This is the workflow of our program](images/design.PNG){#fig:03-project-design}
 
 ### parser.py
 
