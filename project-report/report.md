@@ -14,6 +14,13 @@
 * Evaluating which cloud server provides the optimal working efficiency
 * Learning how to use cloud computing
 
+---
+
+**Keywords**: Chameleon Cloud, Microsoft Azure, Amazon Web Services, EC2, Cloud,
+Drugs Interactions, FAERS, Python, Ubuntu
+
+---
+
 ## Introduction
 
 We created a Python program that took raw data from the United
