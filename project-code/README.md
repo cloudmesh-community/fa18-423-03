@@ -1,4 +1,4 @@
-## Big Data on Health Care - Drug Adverse Effect on Patient
+## Automation on Drug Interactions Profiling
 
 
 **Overview:**
@@ -55,13 +55,13 @@ Steps to achieve desired result:
   For example, if you are looking for *Calcium* and the reactions on that drug.
 
   ```
-  Please put the Drug, format as a list for multiple Drug, e.g. [x,y,z]: Calcium
+  Please put the Drug, format as a list for multiple Drug, e.g. [x,y,z]: [Calcium]
   ```
 
   For example, if you are looking for *Calcium* and *Aspirin*.
 
   ```
-  Please put the Drug, format as a list for multiple Drug, e.g. [x,y,z]: [Calcium, Aspirin.]
+  Please put the Drug, format as a list for multiple Drug, e.g. [x,y,z]: [Calcium, Aspirin]
   ```
 
   Once the program processed the information, it will tell the user that the file for the query has been created.
