@@ -81,7 +81,7 @@ taking the quarterly data from the website and parsing the data and compiling
 the data into a .csv file. Then, query.py is allowing a user to query the data
 that they are looking for from the database.
 
-![This image depicts the workflow of our program](images/design.PNG){#fig:01-design}
+![This image depicts the workflow of our program](images/design1.PNG){#fig:01-design}
 
 #### Code README file
 
@@ -251,12 +251,12 @@ processing power.
 
 ## Clincally Relevant Findings 
 
-Repatha produced by Amgen is a PCSK9 inhibitor designed to attack
+Repatha produced by Amgen is a PCSK9 inhibitor designed to designed to attack
 and inactivate PSCK9 proteins and result in lowered LDL cholesterol
 [@fa18-423-03-repatha]. This drug was approved by the FDA in January 2015,
 therefore it is a relatively new drug for treating hyperlipidemia. According to
 PDR.net, Repatha has no interactions with other drugs [@fa18-423-03-repatha].
-When running our program, however, we found that Repatha has an interaction
+When run our program, however, we have found that Repatha has an interaction
 with Pravastatin another cholesterol lowering medication. However, we did not
 find any adverse event reports tying Repatha and Lipitor (Atorvastatin) a
 different cholesterol lowering medication. +@fig:0-side-effects
@@ -274,8 +274,8 @@ check for drug interactions of recently released drugs. This database in
 combination with our program gives healthcare professionals the power to skip
 the latency period for enough adverse events to occur for drug companies to
 relay that information to the healthcare providers. Ultimately, this can save
-patients from facing unnecessary interactions, whether they be in the form of
-major or minor side effects.
+patients from facing unnecessary interactions, whether they be major or minor
+side effects.
 
 ## Conclusion
 
