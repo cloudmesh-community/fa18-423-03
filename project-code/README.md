@@ -8,7 +8,7 @@ The project ultimate goal is to improve the health care system that we currently
 
 **Requirement:**
 
-The program can be run on different computer operating systems such as Linux, Microsoft, and Mac with basic requirement fulfilled. Different server services can be accessed through [Amazon Web Services](https://github.com/cloudmesh-community/fa18-423-02/blob/master/project-code/aws-setup.md) [Microsoft Azure](http)
+The program can be run on different computer operating systems such as Linux, Microsoft, and Mac with basic requirement fulfilled. Different server services can be accessed through [Amazon Web Services](https://aws.amazon.com/) [Microsoft Azure](https://portal.azure.com/) [Chameleon Cloud](https://www.chameleoncloud.org)
 
 Basic requirement:
   * Python3
@@ -28,45 +28,45 @@ For pandas and numpy installation, it can be found [here](https://pandas.pydata.
 
 In this directory, there are two programs that served different function.
 
-  * project.py is for parsing the xml file into smaller csv file that only contains 3 headings
+  * compile.py is for parsing the xml file into smaller csv file that only contains 3 headings (Drug, Substance, Reaction)
   * query.py is for querying specific information from the csv file
 
 Steps to achieve desired result:
 
   * Downloads and extract the zip file from the [FDA website](https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html)
   * Locate the xml file(s) that is inside the zip file after extracting
-  * Copy the xml file(s) and place them into the same directory as the three python file (project.py, parser.py, and query.py)
-  * Run the project.py using python3
+  * Copy the xml file(s) and place them into the same directory as the three python file (compile.py, parser.py, and query.py)
+  * Run the compile.py using python3
   ```
-  $ python3 project.py
+  $ python3 compile.py
   ```
   * Once the program is finished, there will two files created in that directory: 1) scanned_file.txt which records all the xml file that has been processed, and 2) compiled_data.csv which stores information pertaining the substance, drugs, and reactions
-  * The next step will be running query.py using python 3
+  * The next step will be running query.py using Python 3
   ```
   $ python3 query.py
   ```
   by running this program, the user will be prompted to specified the field that they are interested in. For example, if you are interested in looking for reactions based on *drugs*. you will put it *drug* on the prompt.
   ```
-  Type in query either you are looking for drug, substance, or reaction: drug
+  Are you looking for a "drug", "substance", or "reaction", please enter without quotes: drug
   ```
 
-  The next prompt will prompt the user to specify on which things that they are looking for specifically.
+  The next prompt will instruct the user to specify on which field they are looking for specifically.
 
-  For example, if you are looking for *Calcium* and the reactions on that drug.
-
-  ```
-  Please put the Drug, format as a list for multiple Drug, e.g. [x,y,z]: [Calcium]
-  ```
-
-  For example, if you are looking for *Calcium* and *Aspirin*.
+  For example, if you are looking for *Humira:*
 
   ```
-  Please put the Drug, format as a list for multiple Drug, e.g. [x,y,z]: [Calcium, Aspirin]
+  Please put the Drug, format as a list for multiple Drug, e.g. [x,y,z]: [Humira]
   ```
 
-  Once the program processed the information, it will tell the user that the file for the query has been created.
-  The file will contains specific information based on the query that the user input in.
+  However, if you are looking for multiple drugs, like *Humira* and *Repatha:*
+
+  ```
+  Please put the Drug, format as a list for multiple Drug, e.g. [x,y,z]: [Humira, Repatha]
+  ```
+
+  Once the program queries the information, it will tell the user that the file for the query has been created.
+  The file will contain the queried information based on the parameters that the user inputted.
 
 **Notes**
 
-The query.py program is meant to produce another csv file which is lighter as compare to the original raw xml file. As such, the machine that will further run analysis on the data will take less time.
+The query.py program is meant to produce another csv file which is smaller compared to the original raw xml file. As such, the program will run analysis on the data in less time.
