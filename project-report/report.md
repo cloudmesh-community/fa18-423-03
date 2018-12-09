@@ -1,4 +1,4 @@
-# Automation on Drug Interactions Profiling :hand: fa18-423-06 fa18-423-03 fa18-423-02 fa18-423-05
+# Automation on Drug Interactions Profiling :smiley: fa18-423-06 fa18-423-03 fa18-423-02 fa18-423-05
 
 | Yixing Hu, Kelvin Liuwie, Chandler Mick, Omkar Tamhankar
 | yixihu@gmail.com, kliuwie@gmail.com, chmick@iu.edu, otamhank@iu.edu
@@ -69,12 +69,12 @@ respectively.
 
 ### Code Structure
 
-+@fig:03-design depicts the workflow of our program as a whole. compile.py is
++@fig:01-design depicts the workflow of our program as a whole. compile.py is
 taking the quarterly data from the website and parsing the data and compiling
 the data into a .csv file. Then, query.py is allowing a user to query the data
 that they are looking for from the database.
 
-![This image depicts the workflow of our program](images/design.PNG){#fig:03-design}
+![This image depicts the workflow of our program](images/design.PNG){#fig:01-design}
 
 #### Code README file
 
@@ -151,7 +151,7 @@ version with limited performance features used to test our code.
 
 #### Cyberduck
 
-Cyberduck [@fa18-423-03-cyberduck-ec2] is a FTP and SFTP service that was used
+Cyberduck [@www-Cyberduck] is a FTP and SFTP service that was used
 to transfer our program files from our local machine to the virtual machines.
 Cyberduck is free with any platform.
 
@@ -196,14 +196,14 @@ needs of computing power access if necessary.
 
 ### Architecture
 
-Overall, the architecture of our tests is depicted in +@fig:04-architecture.
+Overall, the architecture of our tests is depicted in +@fig:02-architecture.
 Data files and program code were loaded to the virtual machines through
 Cyberduck. Then, AWS EC2, Chameleon Cloud, and Microsoft Azure were tested to
 find out which service offered the best environment to run our program code
 efficiently. Then, this data was accessed by the user through a local machine
 using console commands.
 
-![This image depicts the architecture of our tests](images/architecture.PNG){#fig:04-architecture}
+![This image depicts the architecture of our tests](images/architecture.PNG){#fig:02-architecture}
 
 ## Results
 
@@ -242,6 +242,34 @@ tested.Services such as Azure and AWS offer a wide range of virtual machine
 options so it is up to the user how much they are willing to pay for speed and 
 processing power.
 
+## Clincally Relevant Findings 
+
+Repatha produced by Amgen is a PCSK9 inhibitor designed to designed to attack
+and inactivate PSCK9 proteins and result in lowered LDL cholesterol
+[@fa18-423-03-repatha]. This drug was approved by the FDA in January 2015,
+therefore it is a relatively new drug for treating hyperlipidemia. According to
+PDR.net, Repatha has no interactions with other drugs [@fa18-423-03-repatha].
+When run our program, however, we have found that Repatha has an interaction
+with Pravastatin another cholesterol lowering medication. However, we did not
+find any adverse event reports tying Repatha and Lipitor (Atorvastatin) a
+different cholesterol lowering medication. +@fig:0-side-effects
+shows our results tying the adverse events of patients taking both Repatha and
+Pravastatin, but no other drugs. 
+
+![This image depicts the side effects of Repatha and Atorvastatin](images/side_effects.PNG){#fig:0-side-effects}
+
+PSCK9 inhibitors are generally prescribed in
+combination with a statin drug so healthcare providers should be aware of the
+possible interactions between these two classes of drugs [@fa18-423-03-repatha].
+Therefore, the novelty produced by our program is that healthcare professionals
+are able to take the most up-to-date adverse events published by the FDA and
+check for drug interactions of recently released drugs. This database in
+combination with our program gives healthcare professionals the power to skip
+the latency period for enough adverse events to occur for drug companies to
+relay that information to the healthcare providers. Ultimately, this can save
+patients from facing unnecessary interactions, whether they be major or minor
+side effects.
+
 ## Conclusion
 
 At the beginning of this project, we had a goal to find a way to take the
@@ -263,9 +291,6 @@ EC2 would be the better of the two.
 * Kelvin Liuwie: Parsing, Compile, and Query Code Writer
 * Chandler Mick: Report Writer, Chameleon Cloud Testing, Query Code Editor
 * Omkar Tamhankar: AWS Server Testing, Chameleon Cloud Testing, Medical Advisor
-
-## Clincally Relevant Findings 
-Repatha produced by Amgen is a PCSK9 inhibitor designed to designed to attack and inactivate PSCK9 proteins and result in lowered LDL cholesterol [@fa18-423-03-repatha]. This drug was approved by the FDA in January 2015, therefore it is a relatively new drug for treating hyperlipidemia. According to PDR.net, Repatha has no interactions with other drugs [@fa18-423-03-repatha]. When run our program, however, we have found that Repatha has an interaction with Pravastatin another cholesterol lowering medication. However, we did not find any adverse event reports tying Repatha and Lipitor (Atorvastatin) a different cholesterol lowering medication. Figure [enter figure number here] shows our results tying the adverse events of patients taking both Repatha and Pravastatin but no other drugs. PSCK9 inhibitors are generally prescribed in combination with a statin drug so healthcare providers should be aware of the possible interactions between these two classes of drugs [@fa18-423-03-repatha]. Therefore, the novelty produced by our program is that healthcare professionals are able to take the most up-to-date adverse events published by the FDA and check for drug interactions of recently released drugs. This database in combination with our program gives healthcare professionals the power to skip the latency period for enough adverse events to occur for drug companies to relay that information to the healthcare providers. Ultimately, this can save patients from facing unnecessary interactions, whether they be major or minor side effects.
 
 ## Appendix
 
@@ -296,12 +321,12 @@ to use this website:
 ```https://openstack.tacc.chameleoncloud.org/dashboard/project/instances/```
 
 Here, you should all the instances created in your project. The webpage should
-resemble +@fig:04-instance-database:
+resemble +@fig:0-instance-database:
 
-![InstanceDatabase](images/Instance_Database.PNG){#fig:04-instance-database}
+![InstanceDatabase](images/Instance_Database.PNG){#fig:0-instance-database}
 
 From here, you must select the "Launch Instance" button. This should bring up a
-webpage that resembles +@fig:05-instance-details. Here, you must enter a name for your
+webpage that resembles +@fig:0-instance-details. Here, you must enter a name for your
 instance. We used a group member's HID as an example (fa18-423-06). Flavor
 describes the amount of resources that will be allocated to the project.
 Resources such as RAM, disk space, etc. It is important to have at least **16**
@@ -310,14 +335,14 @@ that are being processed. The "Instance Boot Source" must be set to "Boot from
 image." We used Ubuntu 16.04 for our "Image Name" due to the ease of running
 commands through the terminal later.
 
-![InstanceDetails](images/Instance_details.PNG){#fig:05-instance-details}
+![InstanceDetails](images/Instance_details.PNG){#fig:0-instance-details}
 
 Next, click on the "Access & Security" tab. Here, you want to create a key pair
 to link the virtual machine to your computer. To do this, you must click on the
 "+" button next to the drop down. You should get a pop up that looks like 
-+@fig:06-key-pair:
++@fig:0-key-pair:
 
-![KeyPair](images/Public_Key.PNG){#fig:06-key-pair}
+![KeyPair](images/Public_Key.PNG){#fig:0-key-pair}
 
 You can name the key however you like. To generate and access your public key,
 enter the following commands on Terminal:
@@ -334,9 +359,9 @@ Chameleon Cloud. Now, you are ready to launch the instance. So, click the
 "Launch Instance" button on the bottom of the dialog box. The instance should
 now appear in the database and take a few minutes to spawn and become active.
 Now, you must associate a floating IP address with the instance to access the
-instance. So, click on the "Associate Floating IP" button (see +@fig:07-floating-ip).
+instance. So, click on the "Associate Floating IP" button (see +@fig:0-floating-ip).
 
-![Associating Floating IP](images/floating_ip.PNG){#fig:07-floating-ip}
+![Associating Floating IP](images/floating_ip.PNG){#fig:0-floating-ip}
 
 Here, you may either add a custom IP address, or just use one of the ones given
 in the drop down. We chose the latter. Either way, you must remember this IP
