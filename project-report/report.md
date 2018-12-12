@@ -336,7 +336,7 @@ interactions, whether they be major or minor side effects.
 
 ## Conclusion
 
-At the beginning of this project, we had a goal to find a way to take the
+In the beginning of our process, we had a goal to find a way to take the
 massive datasets provided by the FDA and turn them into files that can be easily
 queried by a user for further data analysis. At the same time, we wanted to be
 able to explore the possibility and usefulness of Cloud Servers to run our
