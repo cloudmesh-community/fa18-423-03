@@ -1,4 +1,4 @@
-# Automation on Drug Interactions Profiling :smiley: fa18-423-06 fa18-423-03 fa18-423-02 fa18-423-05
+# Automation on Drug Interactions Profiling
 
 | Yixing Hu, Kelvin Liuwie, Chandler Mick, Omkar Tamhankar
 | yixihu@gmail.com, kliuwie@gmail.com, chmick@iu.edu, otamhank@iu.edu
